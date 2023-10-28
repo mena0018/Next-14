@@ -4,7 +4,7 @@ import { lusitana } from './ui/fonts';
 import AcmeLogo from '@/app/ui/acme-logo';
 import Image from 'next/image';
 
-export const Page: NextPage = () => {
+const Page: NextPage = () => {
   return (
     <main className='flex min-h-screen flex-col p-6'>
       <div className='flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52'>
@@ -16,9 +16,9 @@ export const Page: NextPage = () => {
             className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
           >
             <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href='https://nextjs.org/learn/' className='text-blue-500'>
+            <Link href='https://nextjs.org/learn/' className='text-blue-500'>
               Next.js Learn Course
-            </a>
+            </Link>
             , brought to you by Vercel.
           </p>
           <Link

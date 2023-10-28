@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-export const Page: NextPage = () => {
+const Page: NextPage = () => {
   return <p>Customers Page</p>;
 };
 
