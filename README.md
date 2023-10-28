@@ -1,5 +1,3 @@
-## Next.js App Router Course - Final
+## Next.js App Router Course
 
-This is the final template for the Next.js App Router Course. It contains the final code for the dashboard application.
-
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+![image](https://github.com/mena0018/Next-14/assets/89834824/89a24da5-f8cb-4888-be6a-0e48600ab29e)
