@@ -10,6 +10,9 @@
   "plugins": ["prettier", "@typescript-eslint"],
   "root": true,
   "rules": {
+    "@next/next/no-img-element": "warn",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
@@ -21,11 +24,9 @@
     "no-unused-vars": "warn",
     "no-var": "error",
     "no-console": "warn",
-    "@typescript-eslint/no-explicit-any": "error",
     "brace-style": ["error", "1tbs"],
     "object-curly-spacing": ["error", "always"],
     "no-duplicate-imports": "error",
-    "@next/next/no-img-element": "warn",
 
     "prettier/prettier": [
       "error",
