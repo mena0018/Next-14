@@ -9,7 +9,8 @@
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
     "format:fix": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
-    "clean": "npm run lint:fix && npm run format:fix"
+    "clean": "npm run lint:fix && npm run format:fix",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
