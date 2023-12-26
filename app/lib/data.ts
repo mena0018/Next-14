@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { sql } from '@vercel/postgres';
 import {
   CustomerField,
