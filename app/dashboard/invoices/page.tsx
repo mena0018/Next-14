@@ -1,12 +1,16 @@
-import { NextPage } from 'next';
 import { Suspense } from 'react';
 import Search from '@/app/ui/search';
+import { Metadata, NextPage } from 'next';
 import { lusitana } from '@/app/ui/fonts';
 import Table from '@/app/ui/invoices/table';
 import Pagination from '@/app/ui/invoices/pagination';
 import { CreateInvoice } from '@/app/ui/invoices/buttons';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { fetchInvoicesPages } from '@/app/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 type InvoicesPageProps = {
   searchParams?: {

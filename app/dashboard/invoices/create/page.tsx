@@ -1,7 +1,11 @@
-import { NextPage } from 'next';
+import { Metadata, NextPage } from 'next';
 import { fetchCustomers } from '@/app/lib/data';
 import Form from '@/app/ui/invoices/create-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
+
+export const metadata: Metadata = {
+  title: 'Invoices Create',
+};
 
 const Page: NextPage = async () => {
   const customers = await fetchCustomers();

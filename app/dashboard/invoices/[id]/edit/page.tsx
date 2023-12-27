@@ -1,7 +1,12 @@
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Form from '@/app/ui/invoices/edit-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers, fetchInvoiceById } from '@/app/lib/data';
+
+export const metadata: Metadata = {
+  title: 'Invoices Edit',
+};
 
 type PageProps = {
   params: { id: string };

@@ -1,10 +1,14 @@
 import { Suspense } from 'react';
-import { NextPage } from 'next';
+import { Metadata, NextPage } from 'next';
 import { lusitana } from '@/app/ui/fonts';
 import Cards from '@/app/ui/dashboard/cards';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 const Page: NextPage = async () => {
   return (
